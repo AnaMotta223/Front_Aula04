@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback</title>
+  </head>
+  <body>
+    <script>
+      //armazena o nome digitado e imprime na tela
+      const saudacao = (nome) => alert(`Olá ${nome}`);
+
+      const processamento = (callback) => {
+        const nome = prompt("Preencha o nome: ");
+        callback(nome);
+      };
+      //chama a função saudacao dentro da processamento
+      processamento(saudacao);
+    </script>
+  </body>
+</html>

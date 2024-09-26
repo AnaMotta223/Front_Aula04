@@ -1,0 +1,39 @@
+/* link não visitado: */
+.meuLink:link {
+    color: green;
+}
+
+/* link visitado: */
+.meuLink:visited{
+    color: purple;
+}
+
+/* quando passar o mouse em cima */
+.meuLink:hover{
+    color: orange;
+    
+}
+
+.disciplinas li{
+    color: blue;
+    border-bottom: 2px solid gray;
+    padding-bottom: 5px;
+}
+
+.disciplinas{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: aquamarine;
+    margin: 0;
+    padding: 0;
+}
+
+/* pseudoclasse - muda o primeiro elemento da ul disciplinas */
+.disciplinas li:first-child{
+    color: orange;
+}
+
+.disciplinas li:last-child{
+    color: blue;
+    border-bottom: none;
+}

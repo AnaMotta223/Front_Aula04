@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+
+    <style>
+      div {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #373737;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      id="caixa"
+      onmouseover="alterarCor(this,'red')"
+      onmouseout="alterarCor(this,'white')"
+    >
+      <!-- mostra uma caixa de mensagem ao clicar -->
+    </div>
+    <button
+      onclick="alert('Você clicou aqui')"
+      onmouseover="alterarCor(document.getElementById('caixa'),'green')"
+    >
+    Enviar
+    </button>
+    <script>
+      function alterarCor(obj, cor) {
+        obj.style.backgroundColor = cor;
+      }
+    </script>
+  </body>
+</html>
